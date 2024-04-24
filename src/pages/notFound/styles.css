@@ -1,0 +1,15 @@
+.notFound {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.notFound h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+    color: #ff6347; /* Czerwony kolor */
+}
+
+.notFound p {
+    font-size: 18px;
+    color: #555; /* Ciemny szary kolor */
+}

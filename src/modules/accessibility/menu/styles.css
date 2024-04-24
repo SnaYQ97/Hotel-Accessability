@@ -1,0 +1,83 @@
+.accessibility-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--background-color-light);
+  color: var(--text-color-dark);
+  flex-wrap: wrap; /* Dodajemy tę linię */
+}
+
+.accessibility-menu button {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: var(--text-color-dark);
+  background-color: var(--background-color-light);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  border: 1px solid var(--border-color-dark);
+}
+
+.accessibility-menu section {
+  margin: 1rem;
+  width: 100%; /* Dodajemy tę linię */
+}
+
+.accessibility-menu h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color-dark);
+}
+
+.accessibility-menu label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-color-dark);
+}
+
+.accessibility-menu select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: var(--text-color-dark);
+  background-color: var(--background-color-light);
+  border: 1px solid var(--border-color-dark);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color-dark);
+  background-color: var(--background-color-light);
+}
+
+.text div {
+  display: flex;
+  flex-direction: row; /* Zmieniamy na row */
+  color: var(--text-color-dark);
+  background-color: var(--background-color-light);
+}
+
+.text div div {
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color-dark);
+  background-color: var(--background-color-light);
+}
+
+@media screen and (max-width: 600px) {
+  .text div {
+    flex-direction: column; /* Zmieniamy na column dla małych ekranów */
+  }
+  .accessibility-menu {
+    flex-direction: column;
+  }
+
+  .accessibility-menu section {
+    margin: 0.5rem;
+  }
+
+  .accessibility-menu button {
+    margin: 0.5rem;
+  }
+}

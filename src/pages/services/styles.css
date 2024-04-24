@@ -1,0 +1,35 @@
+.services {
+    margin-top: 50px;
+    color: var(--text-color-dark);
+    background-color: var(--background-color-light);
+}
+
+.services h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--text-color-dark);
+}
+
+.services p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: var(--text-color-dark);
+}
+
+#extraServices {
+    list-style: none;
+    padding: 0;
+    color: var(--text-color-dark);
+}
+
+#extraServices li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--text-color-dark);
+}
+
+#extraServices li::before {
+    content: '▸';
+    margin-right: 5px;
+    color: var(--text-color-dark);
+}

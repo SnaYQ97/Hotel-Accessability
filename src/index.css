@@ -1,0 +1,219 @@
+body.contrast-default {
+  --text-color-light: #ffffff; /* Czarny tekst na jasnym tle */
+  --text-color-dark: #000000; /* Biały tekst na ciemnym tle */
+
+  --border-color-light: #e3e3ff;
+  --border-color-dark: #000000;
+
+  --color-primary: #ffdb4d;
+  --color-primary-100: #ffdb4d;
+  --color-primary-90: #ffe07a;
+  --color-primary-80: #ffe4a6;
+  --color-primary-70: #ffe8d3;
+  --color-primary-60: #ffecff;
+  --color-primary-50: #f7f7ff;
+  --color-primary-40: #e3e3ff;
+  --color-primary-30: #d0d0ff;
+  --color-primary-20: #bcbcff;
+  --color-primary-10: #a8a8ff;
+  --color-primary-0: #ffffff;
+
+  --color-secondary: #ffdb4d;
+  --color-secondary-100: #ffdb4d;
+  --color-secondary-90: #ffe07a;
+  --color-secondary-80: #ffe4a6;
+  --color-secondary-70: #ffe8d3;
+  --color-secondary-60: #ffecff;
+  --color-secondary-50: #f7f7ff;
+  --color-secondary-40: #e3e3ff;
+  --color-secondary-30: #d0d0ff;
+  --color-secondary-20: #bcbcff;
+  --color-secondary-10: #a8a8ff;
+  --color-secondary-0: #ffffff;
+
+  --background-color-light: #f0f0f0; /* Jasne tło */
+  --background-color-dark: #000000;
+
+  --color-danger: #ff4d4d;
+  --color-info: #4d4dff;
+  --color-success: #4dff4d;
+  --color-warning: #ffdb4d;
+}
+
+body.contrast-yellowOnBlack {
+  --text-color-light: yellow;
+  --text-color-dark: yellow;
+
+  --border-color-light: yellow;
+  --border-color-dark: yellow;
+
+  --color-primary: yellow;
+  --color-primary-100: yellow;
+  --color-primary-90: yellow;
+  --color-primary-80: yellow;
+  --color-primary-70: yellow;
+  --color-primary-60: yellow;
+  --color-primary-50: yellow;
+  --color-primary-40: yellow;
+  --color-primary-30: yellow;
+  --color-primary-20: yellow;
+  --color-primary-10: yellow;
+  --color-primary-0: yellow;
+
+  --color-secondary: yellow;
+  --color-secondary-100: yellow;
+  --color-secondary-90: yellow;
+  --color-secondary-80: yellow;
+  --color-secondary-70: yellow;
+  --color-secondary-60: yellow;
+  --color-secondary-50: yellow;
+  --color-secondary-40: yellow;
+  --color-secondary-30: yellow;
+  --color-secondary-20: yellow;
+  --color-secondary-10: yellow;
+  --color-secondary-0: yellow;
+
+  --background-color-light: black;
+  --background-color-dark: black;
+
+  --color-danger: black;
+  --color-info: black;
+  --color-success: black;
+  --color-warning: black;
+}
+
+body.contrast-blackOnYellow {
+    --text-color-light: black;
+    --text-color-dark: black;
+
+    --border-color-light: black;
+    --border-color-dark: black;
+
+    --color-primary: black;
+    --color-primary-100: black;
+    --color-primary-90: black;
+    --color-primary-80: black;
+    --color-primary-70: black;
+    --color-primary-60: black;
+    --color-primary-50: black;
+    --color-primary-40: black;
+    --color-primary-30: black;
+    --color-primary-20: black;
+    --color-primary-10: black;
+    --color-primary-0: black;
+
+    --color-secondary: black;
+    --color-secondary-100: black;
+    --color-secondary-90: black;
+    --color-secondary-80: black;
+    --color-secondary-70: black;
+    --color-secondary-60: black;
+    --color-secondary-50: black;
+    --color-secondary-40: black;
+    --color-secondary-30: black;
+    --color-secondary-20: black;
+    --color-secondary-10: black;
+    --color-secondary-0: black;
+
+    --background-color-light: yellow;
+    --background-color-dark: yellow;
+
+    --color-danger: yellow;
+    --color-info: yellow;
+    --color-success: yellow;
+    --color-warning: yellow;
+}
+
+body.contrast-whiteOnBlack {
+    --text-color-light: white;
+    --text-color-dark: white;
+
+    --border-color-light: white;
+    --border-color-dark: white;
+
+    --color-primary: white;
+    --color-primary-100: white;
+    --color-primary-90: white;
+    --color-primary-80: white;
+    --color-primary-70: white;
+    --color-primary-60: white;
+    --color-primary-50: white;
+    --color-primary-40: white;
+    --color-primary-30: white;
+    --color-primary-20: white;
+    --color-primary-10: white;
+    --color-primary-0: white;
+
+    --color-secondary: white;
+    --color-secondary-100: white;
+    --color-secondary-90: white;
+    --color-secondary-80: white;
+    --color-secondary-70: white;
+    --color-secondary-60: white;
+    --color-secondary-50: white;
+    --color-secondary-40: white;
+    --color-secondary-30: white;
+    --color-secondary-20: white;
+    --color-secondary-10: white;
+    --color-secondary-0: white;
+
+    --background-color-light: black;
+    --background-color-dark: black;
+
+    --color-danger: black;
+    --color-info: black;
+    --color-success: black;
+    --color-warning: black;
+}
+
+body.contrast-blackOnWhite {
+  --text-color-light: black;
+  --text-color-dark: black;
+
+  --border-color-light: black;
+  --border-color-dark: black;
+
+  --color-primary: black;
+  --color-primary-100: black;
+  --color-primary-90: black;
+  --color-primary-80: black;
+  --color-primary-70: black;
+  --color-primary-60: black;
+  --color-primary-50: black;
+  --color-primary-40: black;
+  --color-primary-30: black;
+  --color-primary-20: black;
+  --color-primary-10: black;
+  --color-primary-0: black;
+
+  --color-secondary: black;
+  --color-secondary-100: black;
+  --color-secondary-90: black;
+  --color-secondary-80: black;
+  --color-secondary-70: black;
+  --color-secondary-60: black;
+  --color-secondary-50: black;
+  --color-secondary-40: black;
+  --color-secondary-30: black;
+  --color-secondary-20: black;
+  --color-secondary-10: black;
+  --color-secondary-0: black;
+
+  --background-color-light: white;
+  --background-color-dark: white;
+
+  --color-danger: white;
+  --color-info: white;
+  --color-success: white;
+  --color-warning: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color-dark);
+}
+
+root {
+  background-color: var(--background-color-light);
+}

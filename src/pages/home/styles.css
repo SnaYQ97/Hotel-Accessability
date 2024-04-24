@@ -1,0 +1,84 @@
+.hero {
+  background-image: url(../../assets/images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  padding: 100px 0;
+  text-align: center;
+  color: var(--text-color-dark);
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+button {
+  background-color: var(--background-color-light);
+  color: var(--text-color-dark);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--color-primary);
+}
+
+.about {
+  background-color: var(--background-color-light);
+  padding: 40px 0;
+  text-align: center;
+  color: var(--text-color-dark);
+}
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.rooms {
+  color: var(--text-color-dark);
+  background-color: var(--background-color-light);
+}
+
+.rooms .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rooms .room:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.room {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.room img {
+  max-width: 50%;
+  height: auto;
+}
+
+.room h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.room p {
+  font-size: 16px;
+  line-height: 1.5;
+}

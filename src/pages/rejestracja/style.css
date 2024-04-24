@@ -1,0 +1,380 @@
+@font-face {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('OpenSans-Regular'),
+    url('assets/fonts/Open_Sans/static/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 600;);
+    src: local('OpenSans-Bold'),
+    url('assets/fonts/Open_Sans/static/OpenSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+
+}
+
+:root {
+    --accent-color: #444241;
+    --text: #f1f1f1;
+    --text-light: #afafaf;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: OpenSans, sans-serif;
+}
+
+/* Register */
+.booking {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.background {
+    background: url('assets/images/background2.jpg') no-repeat center center fixed;
+    transform: rotatey(180deg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.booking > .booking > .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 20px;
+    padding: 0 40px;
+    margin-bottom: 15%;
+}
+
+.booking > .content .hotel {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin-left: 40px;
+}
+
+.booking > .content > .hotel > h1 {
+    font-size: 3rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    font-family: Times New Roman, Times, serif;
+}
+
+.booking > .content > .hotel > p {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    color: #f5f5dc;
+    align-items: flex-end;
+}
+
+.booking > .content > .hotel > p > .price {
+    font-size: 2rem;
+    margin-right: 10px;
+    color: red;
+}
+
+.booking > .content > .hotel > .stars {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    align-items: center;
+}
+
+.booking > .content > .hotel > .stars > .star {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking > .content > .hotel > .stars > .star > svg > path {
+    fill: #ffe119;
+}
+
+.booking > .content .hotel > p {
+    font-size: 1.5rem;
+    color: #1f0505;
+    font-weight: bold;
+    line-height: 2rem;
+    margin-bottom: 0;
+}
+
+.form {
+    backdrop-filter: blur(10px);
+    background-color: rgba(10, 10, 10, 0.2);
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    z-index: 3;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    max-width: 500px;
+    padding: 0 40px;
+}
+
+.form > .formTitle {
+    font-size: 2.5em;
+    color: var(--text);
+    font-family: Times New Roman, Times, serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.form > form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form > form > .inputBox {
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    color: var(--text);
+    gap: 5px;
+}
+
+.form > form > .date {
+
+}
+
+.form > form > .fieldset {
+    height: unset;
+}
+
+.form > form > .fieldset > fieldset {
+    border: unset;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding-left: unset;
+}
+
+.radio-option {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: var(--accent-color);
+    border-radius: 1rem;
+}
+
+.radio-option > label {
+    cursor: pointer;
+    padding: 0.3rem 1rem 0.4rem;
+    user-select: none;
+}
+
+.radio-option:has(input[type="radio"]:checked) {
+    background-color: var(--accent-color);
+}
+
+.radio-option > input[type="radio"] {
+    display: none;
+}
+
+.checkbox-option > label {
+    padding-top: 0.1rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkbox-option {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid var(--accent-color);
+    border-radius: 1rem;
+}
+
+.checkbox-option > label {
+    cursor: pointer;
+    padding: 0.3rem 1rem 0.4rem;
+}
+
+.checkbox-option:has(input[type="checkbox"]:checked) {
+    background-color: var(--accent-color);
+}
+
+.checkbox-option > input[type="checkbox"] {
+    display: none;
+}
+
+.form > form > .terms {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 108px;
+}
+
+.form > form > .terms > input {
+    order: 0;
+    width: 20px;
+    height: 20px;
+    margin-top: calc(0.55rem - 5px);
+}
+
+.form > form > .terms > label {
+    order: 1;
+    width: calc(100% - 20px - 5px - 7px);
+    letter-spacing: normal;
+    line-height: 1.75rem;
+}
+
+.form > form > .terms > span {
+    order: 2;
+    width: 100%;
+}
+
+.form > form > .inputBox > label {
+    font-size: 1.2rem;
+    letter-spacing: normal;
+}
+
+.form > form > .inputBox > input {
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    letter-spacing: normal;
+    border: 1px solid var(--accent-color);
+    background-color: transparent;
+    color: var(--text);
+    border-radius: calc(1.2rem / 2);
+}
+
+.form > form > .inputBox > ::-webkit-calendar-picker-indicator {
+    background-image: url('assets/images/calendar.svg');
+}
+
+.form > form > .inputBox > input[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+}
+
+.form > form > .inputBox:has(input[type="date"]) {
+    height: calc(1.2rem + 5px + 1.2rem + 5px + 5px + 1px + 1px + 5px + 1rem + 5px + 16px);
+}
+
+.form > form > .inputBox .invalid {
+    color: #f62020;
+}
+
+.form > form > .inputBox > span {
+    color: #f62020;
+    font-size: 1rem;
+    letter-spacing: normal;
+}
+
+
+.form > form > .inputBox > input[type="submit"] {
+    padding: 20px 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1.2rem;
+    letter-spacing: normal;
+    border: 1px solid var(--accent-color);
+    color:var(--text);
+    margin: 30px 0;
+}
+
+.form > form > .inputBox > input[type="submit"]:disabled {
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    color: var(--text);
+    transition: 0.3s;
+    cursor: not-allowed;
+}
+
+.form > form > .inputBox > input[type="submit"]:disabled:hover {
+    background-color: var(--accent-color);
+    color: rgba(248, 210, 191, 0.7);
+    transition: 0.3s;
+}
+
+.form > form > .inputBox > input[type="submit"]:hover {
+    box-sizing: border-box;
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    color: var(--text);
+    transition: 0.3s;
+}
+
+/* Report */
+.report {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.report > .content {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 5px;
+}
+
+.report > .content > .element {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.report > .content > .element > .label {
+    text-transform: capitalize;
+    display: flex;
+    flex-basis: 30%;
+    flex-shrink: 1;
+    font-size: 1.2rem;
+    padding: 10px;
+    height: 100%;
+    border-right: 1px rgba(0, 0, 0, 0.7) solid;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.report > .content > .element > .value {
+    flex: 1;
+    font-size: 1.2rem;
+    display: flex;
+    padding: 10px;
+}
+
+/*
+    Autor: Artur Domurad
+    Data ukończenia: 2024-02-03
+*/

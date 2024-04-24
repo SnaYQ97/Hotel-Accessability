@@ -1,0 +1,26 @@
+.accessibility {
+    color: var(--text-color-dark);
+    background-color: var(--background-color-light);
+}
+
+.accessibility-header {
+    color: var(--text-color-dark);
+}
+
+.accessibility-list {
+    color: var(--text-color-dark);
+    background-color: var(--background-color-light);
+}
+
+.accessibility-list-item {
+    color: var(--text-color-dark);
+    background-color: var(--background-color-light);
+}
+
+.accessibility-list-item-header {
+    color: var(--text-color-dark);
+}
+
+.accessibility-list-item-text {
+    color: var(--text-color-dark);
+}
